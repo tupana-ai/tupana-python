@@ -67,7 +67,7 @@ for doc in result["documents"]:
     print(doc["index"], doc["status"], (doc.get("document") or {}).get("folio"))
 ```
 
-`create_batch` acepta hasta **200 documentos** por llamada. Para cargas más grandes, divide en lotes (mira el ejemplo de [emisión masiva desde Excel o CSV](https://github.com/tupana-ai/tupana-examples)).
+`create_batch` acepta hasta **500 documentos** por llamada. Para cargas más grandes, divide en lotes (mira el ejemplo de [emisión masiva desde Excel o CSV](https://github.com/tupana-ai/tupana-examples)).
 
 ### Asíncrono
 
