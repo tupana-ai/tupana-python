@@ -27,7 +27,7 @@ from ._shared import AsyncResource, SyncResource, compact, has_next_page
 __all__ = ["MAX_BATCH_SIZE", "AsyncDocuments", "Documents"]
 
 #: Máximo de documentos por llamada a ``create_batch``.
-MAX_BATCH_SIZE = 200
+MAX_BATCH_SIZE = 500
 FINAL_BATCH_STATUSES = frozenset({"completed", "failed"})
 
 
@@ -67,7 +67,7 @@ class Documents(SyncResource):
         idempotency_key: Optional[str] = None,
         timeout: Optional[float] = None,
     ) -> BatchCreateResponse:
-        """Emite hasta 200 DTEs en una llamada (``POST /documents/batch/``).
+        """Emite hasta 500 DTEs en una llamada (``POST /documents/batch/``).
 
         La emisión al SII es asíncrona: usa :meth:`retrieve_batch`,
         :meth:`wait_for_batch` o el webhook ``document.issued``.

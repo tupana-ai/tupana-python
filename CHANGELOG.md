@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.1 (2026-10-20)
+
+- `documents.create_batch` acepta hasta 500 documentos por llamada, el límite real de la API.
+
 ## 0.1.0 (2026-10-20)
 
 Primera versión pública.
