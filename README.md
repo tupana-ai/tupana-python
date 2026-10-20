@@ -2,9 +2,14 @@
 
 [![CI](https://github.com/tupana-ai/tupana-python/actions/workflows/ci.yml/badge.svg)](https://github.com/tupana-ai/tupana-python/actions/workflows/ci.yml)
 [![PyPI](https://img.shields.io/pypi/v/tupana.svg)](https://pypi.org/project/tupana/)
+[![Python](https://img.shields.io/pypi/pyversions/tupana.svg)](https://pypi.org/project/tupana/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 SDK oficial de la [API v2 de Tupana](https://docs.tupana.ai) para Python: facturación electrónica ante el SII, links de pago (recaudación), cesión de facturas y webhooks.
+
+```bash
+pip install tupana
+```
 
 - Cliente síncrono (`Tupana`) y asíncrono (`AsyncTupana`) sobre [httpx](https://www.python-httpx.org/).
 - Tipado: `TypedDict` derivados del OpenAPI v2, `py.typed`, verificado con `mypy --strict`.
@@ -18,13 +23,10 @@ SDK oficial de la [API v2 de Tupana](https://docs.tupana.ai) para Python: factur
 
 ```bash
 pip install tupana
+# o: uv add tupana · poetry add tupana
 ```
 
-Mientras publicamos la primera versión en PyPI, puedes instalarlo directo desde GitHub:
-
-```bash
-pip install "git+https://github.com/tupana-ai/tupana-python"
-```
+Paquete en PyPI: [pypi.org/project/tupana](https://pypi.org/project/tupana/).
 
 ## Antes de empezar
 
@@ -265,11 +267,12 @@ Tupana también tiene un servidor MCP remoto en `https://mcp.tupana.ai/mcp` para
 
 ## Recursos
 
+- Paquete en PyPI: [pypi.org/project/tupana](https://pypi.org/project/tupana/)
 - Documentación: [docs.tupana.ai](https://docs.tupana.ai)
 - Portal de desarrolladores y API keys: [developers.tupana.ai](https://developers.tupana.ai)
 - Servidor MCP: [github.com/tupana-ai/tupana-mcp](https://github.com/tupana-ai/tupana-mcp)
 - Ejemplos: [github.com/tupana-ai/tupana-examples](https://github.com/tupana-ai/tupana-examples)
-- SDK de Node.js: [github.com/tupana-ai/tupana-node](https://github.com/tupana-ai/tupana-node)
+- SDK de Node.js: `npm install tupana` ([npm](https://www.npmjs.com/package/tupana) · [GitHub](https://github.com/tupana-ai/tupana-node))
 
 ## Desarrollo
 
