@@ -9,7 +9,7 @@
         [
             {
                 "dte_type": {"code": "33"},
-                "document_issuer": {"rut": "76543210-K"},
+                "document_issuer": {"rut": "76543210-3"},
                 "document_receiver": {"rut": "77777777-7"},
                 "details": [{"item_name": "Asesoría", "quantity": 1, "unit_price": 150000}],
             }
